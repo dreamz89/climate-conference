@@ -16,6 +16,7 @@ CMS: **Storyblok**
 ## Design
 
 Designed by me with <a href="https://www.figma.com/file/jZJbEQhxgWt18VeoCeReYb/Climate-Solutions-Conference?type=design&node-id=3%3A3&mode=design&t=4TVL9zFP7fxs7A9T-1">Figma</a>  
+Inspirations: <a href="https://dribbble.com/dreamz89/collections/6900670-Conferences">Dribble</a>  
 
 ## Attribution
 
