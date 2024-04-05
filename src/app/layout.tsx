@@ -25,11 +25,9 @@ export const metadata: Metadata = {
 }
 
 storyblokInit({
-  accessToken: process.env.STORYBLOK_DRAFT_TOKEN,
+  accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
+  bridge: process.env.NEXT_PUBLIC_NODE_ENV !== 'production',
   use: [apiPlugin],
-  apiOptions: {
-    region: "eu", // default
-  },
 })
 
 export default function RootLayout({

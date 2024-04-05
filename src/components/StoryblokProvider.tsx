@@ -12,7 +12,8 @@ const components = {
 }
  
 storyblokInit({
-  accessToken: process.env.storyblokDraftToken,
+  accessToken: process.env.storyblokAccessToken,
+  bridge: process.env.nodeEnv !== 'production',
   use: [apiPlugin],
   components,
 });

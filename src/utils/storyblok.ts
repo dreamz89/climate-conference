@@ -1,16 +1,14 @@
 import { draftMode } from "next/headers"
 import { getStoryblokApi } from "@storyblok/react/rsc"
 
-export async function getStory(slug: string) {
-  const storyblokApi = getStoryblokApi()
+const storyblokApi = getStoryblokApi()
 
+export async function getStory(slug: string) {
   if (!storyblokApi) return
 
-  const { isEnabled } = draftMode()
-  const version = process.env.NEXT_PUBLIC_STORYBLOK_VERSION
-
+  const isDraftEnabled = draftMode().isEnabled
   const { data } = await storyblokApi.get(`cdn/stories/${slug}`, {
-    version: isEnabled || version === 'draft' ? "draft" : "published",
+    version: isDraftEnabled ? "draft" : "published",
   })
 
   return data ? data.story : null
