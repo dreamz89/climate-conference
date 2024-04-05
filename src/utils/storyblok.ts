@@ -13,3 +13,13 @@ export async function getStory(slug: string) {
 
   return data ? data.story : null
 }
+
+export async function getLinks() {
+  if (!storyblokApi) return
+
+  const { data } = await storyblokApi.get("cdn/links", {
+    version: "published",
+  })
+
+  return data ? data.links : null
+}
