@@ -17,6 +17,12 @@ jobs:
         with:
           node-version: '21'
 
+      - name: Create env file
+        run: | 
+          touch .env 
+          echo NEXT_PUBLIC_NODE_ENV=${{ secrets.NEXT_PUBLIC_NODE_ENV_DEV }} >> .env
+          echo STORYBLOK_ACCESS_TOKEN=${{ secrets.STORYBLOK_ACCESS_TOKEN_PREVIEW }} >> .env
+
       - run: npm install
       - run: npm run lint
       - run: npm run build
