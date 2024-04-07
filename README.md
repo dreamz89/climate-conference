@@ -1,10 +1,5 @@
 # Climate Solutions Conference
 
-## Deployment
-
-Live: https://climate-conference.vercel.app/  
-Preview: generated on every push to develop branch
-
 ## Techstack
 
 Framework:  **Next.js (SSG)**  
@@ -12,6 +7,24 @@ CI/CD:       **Github Actions**
 Hosting:    **Vercel**  
 Styling:    **Tailwind CSS**  
 CMS: **Storyblok** 
+
+## Deployment
+
+Live: https://climate-conference.vercel.app/ (main branch)  
+Preview: https://climate-conference-preview.vercel.app/ (preview branch)  
+The latest push to any pull request will automatically be made available at a unique preview URL  
+
+## Storyblok
+
+Main branch: Live Editing and Storyblok bridge disabled (using public token and environment variables)  
+Preview and Development branch: Live editing and Storyblok bridge enabled (preview token)  
+
+To enter draft mode:
+
+    https://climate-conference-preview.vercel.app/api/draft?secret=<previewToken>&slug=  
+To exit draft mode:
+
+    https://climate-conference-preview.vercel.app/api/disable-draft?slug=  
 
 ## Design
 
