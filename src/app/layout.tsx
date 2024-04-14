@@ -38,7 +38,9 @@ export default function RootLayout({
   return (
     <StoryblokProvider>
       <html lang="en">
-        <body className={plusJakartaSans.className}>{children}</body>
+        <body className={`${plusJakartaSans.className} box-border text-black`}>
+          {children}
+        </body>
         <StoryblokBridgeLoader options={{}} />
       </html>
     </StoryblokProvider>
