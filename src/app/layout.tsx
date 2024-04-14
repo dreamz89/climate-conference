@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 storyblokInit({
   accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
-  bridge: process.env.NEXT_PUBLIC_NODE_ENV !== 'production',
+  bridge: process.env.NEXT_PUBLIC_NODE_ENV !== "production",
   use: [apiPlugin],
 })
 
@@ -38,7 +38,9 @@ export default function RootLayout({
   return (
     <StoryblokProvider>
       <html lang="en">
-        <body className={plusJakartaSans.className}>{children}</body>
+        <body className={`${plusJakartaSans.className} box-border text-black`}>
+          {children}
+        </body>
         <StoryblokBridgeLoader options={{}} />
       </html>
     </StoryblokProvider>
