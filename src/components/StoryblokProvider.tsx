@@ -13,10 +13,10 @@ const components = {
  
 storyblokInit({
   accessToken: process.env.storyblokAccessToken,
-  bridge: process.env.nodeEnv !== 'production',
+  bridge: process.env.nodeEnv !== "production",
   use: [apiPlugin],
   components,
-});
+})
  
 export default function StoryblokProvider({ children }: any) {
   return children

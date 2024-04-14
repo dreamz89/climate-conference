@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 storyblokInit({
   accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
-  bridge: process.env.NEXT_PUBLIC_NODE_ENV !== 'production',
+  bridge: process.env.NEXT_PUBLIC_NODE_ENV !== "production",
   use: [apiPlugin],
 })
 
