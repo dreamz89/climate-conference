@@ -41,7 +41,7 @@ async function getNavigation() {
 
   const isDraftEnabled = draftMode().isEnabled
   const { data } = await storyblokApi.get("cdn/stories/navigation", {
-    version: true ? "draft" : "published",
+    version: isDraftEnabled ? "draft" : "published",
     resolve_links: "url",
   })
 
