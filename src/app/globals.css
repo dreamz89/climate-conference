@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  a {
+    @apply cursor-pointer;
+  }
+}
+
 @layer components {
   .cc-container {
     @apply mx-auto max-w-screen-xl px-4 xl:px-8;
