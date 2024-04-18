@@ -7,9 +7,7 @@ import Icon from "./icons/Icon"
 const NavLinks = ({ blok }: any) => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   return (
     <div {...storyblokEditable(blok)}>
@@ -31,7 +29,11 @@ const NavLinks = ({ blok }: any) => {
             </Icon>
           </div>
           {blok.body.map((nestedBlok: any) => (
-            <div className="px-4 py-3" key={nestedBlok._uid}>
+            <div
+              className="px-4 py-3"
+              key={nestedBlok._uid}
+              onClick={toggleMenu}
+            >
               <StoryblokComponent blok={nestedBlok} />
             </div>
           ))}
