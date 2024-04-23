@@ -4,7 +4,7 @@ import { storyblokEditable, StoryblokComponent } from "@storyblok/react/rsc"
 const HeroSection = ({ blok }: any) => {
   return (
     <section className="cc-section" {...storyblokEditable(blok)}>
-      <div className="cc-container flex max-w-md flex-col justify-between gap-8 lg:max-w-none lg:flex-row">
+      <div className="cc-container flex max-w-md flex-col justify-between gap-8 lg:max-w-screen-xl lg:flex-row">
         <div className="flex flex-col justify-center">
           <h1 className="cc-h1 mb-1 lg:mb-3 lg:max-w-none">{blok.headline}</h1>
           <p className="mb-6 lg:mb-9">{blok.subheadline}</p>

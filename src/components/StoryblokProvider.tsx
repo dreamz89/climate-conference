@@ -1,6 +1,7 @@
 "use client"
 
 import { storyblokInit, apiPlugin } from "@storyblok/react/rsc"
+import BentoSection from "./BentoSection"
 import Button from "./Button"
 import HeroSection from "./HeroSection"
 import ImageLink from "./ImageLink"
@@ -16,8 +17,10 @@ const components = {
   nav_links: NavLinks,
   image_link: ImageLink,
   hero_section: HeroSection,
+  bento_section: BentoSection,
   page_header: PageHeader,
   page: Page,
+  button: Button,
 }
  
 storyblokInit({
