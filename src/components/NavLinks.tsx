@@ -26,7 +26,7 @@ const NavLinks = ({ blok }: any) => {
 
   return (
     <div {...storyblokEditable(blok)}>
-      <div className="xl:hidden">
+      <div className="lg:hidden">
         <div className="cursor-pointer" onClick={toggleMenu}>
           <Icon>
             <Burger />
@@ -37,7 +37,7 @@ const NavLinks = ({ blok }: any) => {
           ref={menuRef}
         >
           <div
-            className="flex h-14 cursor-pointer items-center justify-end px-4 xl:px-8"
+            className="flex h-14 cursor-pointer items-center justify-end px-4 lg:px-8"
             onClick={toggleMenu}
           >
             <Icon>
@@ -55,7 +55,7 @@ const NavLinks = ({ blok }: any) => {
           ))}
         </div>
       </div>
-      <div className="hidden gap-x-10 xl:flex">
+      <div className="hidden gap-x-10 lg:flex">
         {blok.body.map((nestedBlok: any) => (
           <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
         ))}

@@ -6,7 +6,7 @@ const ImageLink = ({ blok }: any) => {
   return (
     <Link
       href={blok.link.story ? blok.link.story.url : ""}
-      className="relative block h-14 w-20 xl:h-20 xl:w-24"
+      className="relative block h-14 w-20 lg:h-20 lg:w-24"
       {...storyblokEditable(blok)}
     >
       <Image src={blok.image.filename} alt={blok.image.alt} fill />
