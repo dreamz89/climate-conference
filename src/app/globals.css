@@ -27,6 +27,10 @@
     @apply text-4xl font-bold lg:text-5xl;
   }
 
+  .cc-h2 {
+    @apply text-[1.75rem]/8 font-bold lg:text-4xl;
+  }
+
   .cc-copy-md {
     @apply text-base lg:text-xl;
   }
