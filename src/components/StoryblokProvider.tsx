@@ -10,6 +10,8 @@ import NavLink from "./NavLink"
 import NavLinks from "./NavLinks"
 import PageHeader from "./PageHeader"
 import Page from "./Page"
+import Stat from "./Stat"
+import StatsSection from "./StatsSection"
  
 const components = {
   navigation: Navigation,
@@ -18,9 +20,11 @@ const components = {
   image_link: ImageLink,
   hero_section: HeroSection,
   bento_section: BentoSection,
+  stats_section: StatsSection,
   page_header: PageHeader,
   page: Page,
   button: Button,
+  stat: Stat,
 }
  
 storyblokInit({
