@@ -19,6 +19,8 @@ const HeroSection = ({ blok }: any) => {
               alt={blok.image.alt}
               src={blok.image.filename}
               fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 28rem"
             />
             <div className="absolute z-[-1] h-full w-full -translate-y-3 translate-x-3 rotate-3 rounded bg-gradient-to-r from-green-600 to-green-200 lg:-translate-y-6 lg:translate-x-6"></div>
           </div>
