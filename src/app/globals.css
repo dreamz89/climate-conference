@@ -19,6 +19,10 @@
     @apply py-10 lg:py-20;
   }
 
+  .cc-section-colored {
+    @apply bg-gray-100 py-8 lg:py-16;
+  }
+
   .cc-h1 {
     @apply text-4xl font-bold lg:text-5xl;
   }
