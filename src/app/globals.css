@@ -34,4 +34,12 @@
   .cc-copy-md {
     @apply text-base lg:text-xl;
   }
+
+  .cc-triangle-top-left {
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+
+  .cc-triangle-bottom-right {
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  }
 }
