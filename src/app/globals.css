@@ -27,7 +27,19 @@
     @apply text-4xl font-bold lg:text-5xl;
   }
 
+  .cc-h2 {
+    @apply text-[1.75rem]/8 font-bold lg:text-4xl;
+  }
+
   .cc-copy-md {
     @apply text-base lg:text-xl;
+  }
+
+  .cc-triangle-top-left {
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+
+  .cc-triangle-bottom-right {
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
   }
 }
