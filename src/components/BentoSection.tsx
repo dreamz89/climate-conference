@@ -41,12 +41,12 @@ const BentoSection = ({ blok }: any) => {
             sizes="(max-width: 768px) 50vw, (max-width: 1280px) 25vw, 286px"
           />
         </div>
-        <div className="aspect-square overflow-hidden rounded bg-green-400 p-6 md:max-lg:p-4">
+        <div className="aspect-square overflow-hidden rounded bg-green-400 p-4 lg:p-6">
           <p className="text-md text-white sm:max-md:text-lg lg:text-lg">
             {blok.cta_a}
           </p>
         </div>
-        <div className="aspect-square overflow-hidden rounded bg-green-400 p-6 md:max-lg:p-4">
+        <div className="aspect-square overflow-hidden rounded bg-green-400 p-4 lg:p-6">
           <p className="text-md text-white sm:max-md:text-lg lg:text-lg">
             {blok.cta_b}
           </p>

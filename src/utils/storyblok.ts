@@ -8,7 +8,7 @@ export async function getStory(slug: string) {
 
   const isDraftEnabled = draftMode().isEnabled
   const { data } = await storyblokApi.get(`cdn/stories/${slug}`, {
-    version: isDraftEnabled ? "draft" : "published",
+    resolve_links: "url",
   })
 
   return data ? data.story : null
