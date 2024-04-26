@@ -12,6 +12,9 @@ import NavLinks from "./NavLinks"
 import PageHeader from "./PageHeader"
 import SectionHeader from "./SectionHeader"
 import Page from "./Page"
+import Partner from "./Partner"
+import Partners from "./Partners"
+import PartnersSection from "./PartnersSection"
 import Speaker from "./Speaker"
 import Speakers from "./Speakers"
 import SpeakersSection from "./SpeakersSection"
@@ -31,6 +34,7 @@ const components = {
   stats_section: StatsSection,
   speakers_section: SpeakersSection,
   tickets_section: TicketsSection,
+  partners_section: PartnersSection,
   section_header: SectionHeader,
   page_header: PageHeader,
   page: Page,
@@ -41,6 +45,8 @@ const components = {
   benefits: Benefits,
   ticket: Ticket,
   tickets: Tickets,
+  partner: Partner,
+  partners: Partners,
 }
 
 storyblokInit({
