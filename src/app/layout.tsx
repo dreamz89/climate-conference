@@ -58,8 +58,9 @@ export default async function RootLayout({
   return (
     <StoryblokProvider>
       <html lang="en">
-        <body className={`${plusJakartaSans.className} box-border text-black`}>
-          <Navigation blok={story.content}/>
+        <body
+          className={`${plusJakartaSans.className} box-border overflow-x-hidden text-black`}
+        >
           {children}
         </body>
         <StoryblokBridgeLoader options={{}} />
