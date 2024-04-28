@@ -28,7 +28,15 @@ const Button = ({ blok }: any) => {
       </a>
     )
   } else {
-    return <button {...storyblokEditable(blok)}>{blok.label}</button>
+    return (
+      <button
+        className="flex w-40 justify-center rounded bg-yellow-400 py-3 leading-4 hover:bg-yellow-500"
+        type={blok.type}
+        {...storyblokEditable(blok)}
+      >
+        {blok.label}
+      </button>
+    )
   }
 }
 

@@ -4,22 +4,30 @@ import { storyblokInit, apiPlugin } from "@storyblok/react/rsc"
 import Benefits from "./Benefits"
 import BentoSection from "./BentoSection"
 import Button from "./Button"
+import Footer from "./Footer"
+import FooterBottom from "./FooterBottom"
+import FooterLinks from "./FooterLinks"
 import HeroSection from "./HeroSection"
 import ImageLink from "./ImageLink"
+import LegalLinks from "./LegalLinks"
 import Navigation from "./Navigation"
 import NavLink from "./NavLink"
 import NavLinks from "./NavLinks"
+import Newsletter from "./Newsletter"
 import PageHeader from "./PageHeader"
-import SectionHeader from "./SectionHeader"
 import Page from "./Page"
 import Partner from "./Partner"
 import Partners from "./Partners"
 import PartnersSection from "./PartnersSection"
+import SectionHeader from "./SectionHeader"
+import SocialLink from "./SocialLink"
+import SocialLinks from "./SocialLinks"
 import Speaker from "./Speaker"
 import Speakers from "./Speakers"
 import SpeakersSection from "./SpeakersSection"
 import Stat from "./Stat"
 import StatsSection from "./StatsSection"
+import TextLink from "./TextLink"
 import Ticket from "./Ticket"
 import Tickets from "./Tickets"
 import TicketsSection from "./TicketsSection"
@@ -47,6 +55,14 @@ const components = {
   tickets: Tickets,
   partner: Partner,
   partners: Partners,
+  footer: Footer,
+  footer_bottom: FooterBottom,
+  footer_links: FooterLinks,
+  legal_links: LegalLinks,
+  social_link: SocialLink,
+  social_links: SocialLinks,
+  newsletter: Newsletter,
+  text_link: TextLink,
 }
 
 storyblokInit({
