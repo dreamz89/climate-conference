@@ -19,6 +19,8 @@ import Page from "./Page"
 import Partner from "./Partner"
 import Partners from "./Partners"
 import PartnersSection from "./PartnersSection"
+import ProgramSubpage from "./ProgramSubpage"
+import ProgramTab from "./ProgramTab"
 import SectionHeader from "./SectionHeader"
 import SocialLink from "./SocialLink"
 import SocialLinks from "./SocialLinks"
@@ -27,6 +29,7 @@ import Speakers from "./Speakers"
 import SpeakersSection from "./SpeakersSection"
 import Stat from "./Stat"
 import StatsSection from "./StatsSection"
+import Talk from "./Talk"
 import TextLink from "./TextLink"
 import Ticket from "./Ticket"
 import Tickets from "./Tickets"
@@ -63,6 +66,9 @@ const components = {
   social_links: SocialLinks,
   newsletter: Newsletter,
   text_link: TextLink,
+  program_subpage: ProgramSubpage,
+  program_tab: ProgramTab,
+  talk: Talk,
 }
 
 storyblokInit({
