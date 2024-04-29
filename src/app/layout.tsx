@@ -72,7 +72,7 @@ export default async function RootLayout({
 
   return (
     <StoryblokProvider>
-      <html lang="en">
+      <html lang="en" className="overflow-x-hidden">
         <body
           className={`${plusJakartaSans.className} box-border overflow-x-hidden text-black`}
         >
