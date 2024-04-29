@@ -74,7 +74,7 @@ export default async function RootLayout({
     <StoryblokProvider>
       <html lang="en" className="overflow-x-hidden">
         <body
-          className={`${plusJakartaSans.className} box-border overflow-x-hidden text-black`}
+          className={`${plusJakartaSans.className} box-border overflow-clip text-black`}
         >
           <Navigation blok={navStory.content} />
           {children}
