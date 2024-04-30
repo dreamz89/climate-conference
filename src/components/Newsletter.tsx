@@ -8,7 +8,7 @@ const Newsletter = ({ blok }: any) => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     console.log("submit", inputRef.current?.value)
-    setIsSubmitted(true)
+    if (inputRef.current?.value) setIsSubmitted(true)
   }
 
   const buttonBlok = blok.body.find((body: any) => body.component === "button")
